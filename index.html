@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <h1 class="header">My To-Do List</h1>
+    <div class="container">
+      <ul id="my-list"></ul>
+      <input type="button" value="Add To-do" onclick="toggleForm()" />
+    </div>
+    <form class="form">
+      <textarea class="form__input" name="todo" rows="5"> </textarea>
+      <div class="form__btns">
+        <input type="button" value="Save" onclick="saveTodo()" />
+        <input type="button" value="Cancel" onclick="toggleForm()" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
